@@ -44,14 +44,21 @@ Add a media query to change (.container) width to 80% for mobile viewing
 clean this up!
 */
 
+/* For desktop screens */
+
 @media only screen and (max-width: 800px) {
 .container {
     width: 60%;
 }
 
+/* For tablet screens */
+
+@media only screen and (min-width: 600px) {
+
+
 }
 /* For mobile screens */
-@media only screen and (max-width: 799px) {
+@media only screen and (max-width: 599px) {
   .responsive {
     width: 60%;
   }
