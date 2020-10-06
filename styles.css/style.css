@@ -1,6 +1,12 @@
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/styles.css/Images/background.png");
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
 }
 
 h1 {
@@ -22,8 +28,34 @@ h1 {
   background-color: white;
   float: left;
   width: 50%;
+  height: auto;
   margin-left: 60px;
   margin-bottom: 25px;
   margin-top: 25px;
   padding: 25px;
+}
+
+/* 
+
+Add a media query to make the picture look bigger while in a smaller screen
+
+Add a media query to change (.container) width to 80% for mobile viewing
+
+clean this up!
+*/
+
+@media only screen and (max-width: 800px) {
+.container {
+    width: 60%;
+}
+
+}
+/* For mobile screens */
+@media only screen and (max-width: 799px) {
+  .responsive {
+    width: 60%;
+  }
+  .container {
+    width: 80%;
+  }
 }
